@@ -3,11 +3,16 @@
 #include <time.h>
 
  /**
-  * main-Entry point of the program
+  * main - Entry point that prints a random num behavior.
+  * @n: Random number
+  * @str: an array of characters
+  * @l: a number that holds modul result
   *
-  * prints random number wether >5, <6 or =0
+  * Description: random number and their behavior.
+  * the program prints the last digit of  a randome number
+  * wether it is greater than 5, less than 6 or equal to 0
   *
-  *  Return: Always 0
+  *  Return: Always 0.
   */
 int main(void)
 {
