@@ -1,15 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
- /* main-Entry point of the program */
 
- /* main prints wether random number is greater than 5, equal to 0 or else */
-
- /* Return: Always 0 */
+ /**
+  * main-Entry point of the program
+  *
+  * prints random number wether >5, <6 or =0
+  *
+  *  Return: Always 0
+  */
 int main(void)
 {
 	int n;
-	char str[] = "Last digit of ";
+	char str[] = "Last digit of";
 	int l;
 
 	srand(time(0));
