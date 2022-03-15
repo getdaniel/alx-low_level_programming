@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - Entry point of the program
+ * print_alphabet -Entry point of the program
  *
  * Return: Always 0 for success
  */
-int main(void)
+void print_alphabet(void);
 {
 	char i;
 
