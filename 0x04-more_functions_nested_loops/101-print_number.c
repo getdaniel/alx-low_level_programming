@@ -7,7 +7,7 @@
  */
 void print_number(int n)
 {
-	int INT_MIN = -2147483647 - 1;
+	int INT_MIN = -2147483647;
 	int INT_MAX = 2147483647;
 
 	if (n < 0 && (n >= INT_MIN && n <= INT_MAX))
