@@ -25,11 +25,16 @@ int main(void)
 		}
 		else if ((num % 5) == 0)
 		{
-			if(num == 100)
+			if (num == 100)
+			{
 				printf("Buzz");
+				continue;
+			}
 			else
+			{
 				printf("Buzz ");
-			continue;
+				continue;
+			}
 		}
 		else
 			printf("%d ", num);
