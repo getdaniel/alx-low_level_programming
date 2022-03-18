@@ -12,12 +12,12 @@ void print_triangle(int size)
 	int row, col, tri;
 
 	if (size <= 0)
-		_putchar('n');
+		_putchar('\n');
 	else
 	{
-		for (row = 0; row < (size - 1); row++)
+		for (row = 0; row <= (size - 1); row++)
 		{
-			for (col = 0; col < (size - 1) - row; col++)
+			for (col = 0; col <= (size - 1) - row; col++)
 				_putchar(' ');
 
 			for (tri = 0; tri <= row; tri++)
