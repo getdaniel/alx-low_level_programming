@@ -39,7 +39,7 @@ int main(void)
 		 */
 	maxPrime = num;
 
-	printf("%lu ", maxPrime);
+	printf("%lu", maxPrime);
 
 	putchar('\n');
 
