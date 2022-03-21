@@ -13,7 +13,7 @@ int main(void)
 	/* Initialize counter */
 	int i = 0, N;
 	int randomizer = 0;
-	char numbers[], letter[], LETTER[], password[];
+	char numbers[10], letter[26], LETTER[26], password[20];
 
 	/**
 	 * Seed the random-number generator
