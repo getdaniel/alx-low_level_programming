@@ -23,16 +23,16 @@ int main(void)
 	srand((unsigned int)(time(NULL)));
 
 	/* Array of numbers */
-	numbers[] = "0123456789";
+	numbers = "0123456789";
 
 	/* Array of small alphabets */
-	letter[] = "abcdefghijklmnoqprstuvwyzx";
+	letter = "abcdefghijklmnoqprstuvwyzx";
 
 	/* Array of capital alphabets */
-	LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
+	LETTER = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
 
 	/* Array of all the special symbols */
-	symbols[] = "!@#$^&*?";
+	symbols = "!@#$^&*?";
 
 	/* Stores the random password */
 	password[N];
