@@ -1,4 +1,4 @@
-#include "amin.h"
+#include "main.h"
 
 /**
  * puts2 - prints a character every one jump
