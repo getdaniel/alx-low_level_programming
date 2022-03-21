@@ -11,8 +11,9 @@
 int main(void)
 {
 	/* Initialize counter */
-	int i = 0;
+	int i = 0, N;
 	int randomizer = 0;
+	char numbers[], letter[], LETTER[], password[];
 
 	/**
 	 * Seed the random-number generator
@@ -22,19 +23,19 @@ int main(void)
 	srand((unsigned int)(time(NULL)));
 
 	/* Array of numbers */
-	char numbers[] = "0123456789";
+	numbers = "0123456789";
 
 	/* Array of small alphabets */
-	char letter[] = "abcdefghijklmnoqprstuvwyzx";
+	letter = "abcdefghijklmnoqprstuvwyzx";
 
 	/* Array of capital alphabets */
-	char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
+	LETTER = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
 
 	/* Array of all the special symbols */
-	char symbols[] = "!@#$^&*?";
+	symbols = "!@#$^&*?";
 
 	/* Stores the random password */
-	char password[N];
+	password[N];
 
 	/**
 	 * To select the randomizer inside the loop
