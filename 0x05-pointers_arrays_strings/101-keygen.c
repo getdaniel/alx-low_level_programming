@@ -13,7 +13,7 @@ int main(void)
 	/* Initialize counter */
 	int i = 0, N;
 	int randomizer = 0;
-	char numbers[10], letter[26], LETTER[26], password[20];
+	char numbers[10], letter[26], LETTER[26], password[20], symbols[8];
 
 	/**
 	 * Seed the random-number generator
@@ -23,16 +23,16 @@ int main(void)
 	srand((unsigned int)(time(NULL)));
 
 	/* Array of numbers */
-	numbers = "0123456789";
+	numbers[] = "0123456789";
 
 	/* Array of small alphabets */
-	letter = "abcdefghijklmnoqprstuvwyzx";
+	letter[] = "abcdefghijklmnoqprstuvwyzx";
 
 	/* Array of capital alphabets */
-	LETTER = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
+	LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
 
 	/* Array of all the special symbols */
-	symbols = "!@#$^&*?";
+	symbols[] = "!@#$^&*?";
 
 	/* Stores the random password */
 	password[N];
