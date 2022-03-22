@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <time.h>
-#include <math.h>
 #include <stdlib.h>
 
 /**
@@ -10,66 +9,44 @@
  */
 int main(void)
 {
-	/* Initialize counter */
-	int i = 0, N;
-	int randomizer = 0;
-	char numbers[10], letter[26], LETTER[26], password[20], symbols[8];
+	char password[84];
+	int index = 0, sum = 0, diff_half1, diff_half2;
 
-	/**
-	 * Seed the random-number generator
-	 * with current time so that the
-	 * numbers will be different every time
-	 */
-	srand((unsigned int)(time(NULL)));
+	srand(time(0));
 
-	/* Array of numbers */
-	numbers = "0123456789";
-
-	/* Array of small alphabets */
-	letter = "abcdefghijklmnoqprstuvwyzx";
-
-	/* Array of capital alphabets */
-	LETTER = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
-
-	/* Array of all the special symbols */
-	symbols = "!@#$^&*?";
-
-	/* Stores the random password */
-	password[N];
-
-	/**
-	 * To select the randomizer inside the loop
-	 */
-	randomizer = rand() % 4;
-
-	/* Iterate over the range [0, N] */
-	for (i = 0; i < N; i++)
+	while (sum < 2772)
 	{
-		if (randomizer == 1)
+		password[index] = 33 + rand() % 94;
+		sum += password[index++];
+	}
+
+	password[index] = '\0';
+
+	if (sum != 2772)
+	{
+		diff_half1 = (sum - 2772) / 2;
+		diff_half2 = (sum - 2772) / 2;
+
+		if ((sum - 2772) % 2 != 0)
+			diff_half1++;
+		for (index = 0; password[index]; index++)
 		{
-			password[i] = numbers[rand() % 10];
-			randomizer = rand() % 4;
-			printf("%c", password[i]);
+			if (password[index] >= (33 + diff_half1))
+			{
+				password[index] -= diff_half1;
+				break;
+			}
 		}
-		else if (randomizer == 2)
+		for (index = 0; password[index]; index++)
 		{
-			password[i] = symbols[rand() % 8];
-			randomizer = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else if (randomizer == 3)
-		{
-			password[i] = LETTER[rand() % 26];
-			randomizer = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else
-		{
-			password[i] = letter[rand() % 26];
-			randomizer = rand() % 4;
-			printf("%c", password[i]);
+			if (password[index] >= (33 + diff_half2))
+			{
+				password[index] -= diff_half2;
+				break;
+			}
 		}
 	}
+	printf("%s\n", password);
 
 	return (0);
 }
