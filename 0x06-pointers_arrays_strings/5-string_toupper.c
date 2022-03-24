@@ -11,13 +11,13 @@ char *string_toupper(char *c)
 {
 	int i = 0;
 
-	while (p[i])
+	while (c[i])
 	{
-		if (p[i] >= 97 && p[i] <= 122)
-			p[i] -= 32;
+		if (c[i] >= 97 && c[i] <= 122)
+			c[i] -= 32;
 
 		i++;
 	}
 
-	return (i);
+	return (c);
 }
