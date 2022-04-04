@@ -9,7 +9,7 @@
  *
  * Return: if ac = 0, av == NULL, or the function fails - NULL.
  *         otherwise - a pointer to the new string
- */ 
+ */
 char *argstostr(int ac, char **av)
 {
 	char *str;
