@@ -27,7 +27,7 @@ int **alloc_grid(int width, int height)
 	{
 		t_dim[het_index] = malloc(sizeof(int) * width);
 
-		if (t_dim[het_index] = NULL)
+		if (t_dim[het_index] == NULL)
 		{
 			for (; het_index >= 0; het_index--)
 				free(t_dim[het_index]);
@@ -38,7 +38,7 @@ int **alloc_grid(int width, int height)
 		}
 	}
 
-	for (het_index 0; het_index < height; het_index++)
+	for (het_index = 0; het_index < height; het_index++)
 	{
 		for (wid_index = 0; wid_index < width; wid_index++)
 			t_dim[het_index][wid_index] = 0;
