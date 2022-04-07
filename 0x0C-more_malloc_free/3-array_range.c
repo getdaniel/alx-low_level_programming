@@ -7,7 +7,7 @@
  * @min: minimum array
  * @max: maximum array
  *
- * Return: Pointer to the newly created array 
+ * Return: Pointer to the newly created array
  *         otherwise NULL if min > max and malloc files
  */
 int *array_range(int min, int max)
@@ -16,16 +16,16 @@ int *array_range(int min, int max)
 
 	if (min > max)
 		return (NULL);
-	ar = malloc(sizeof(int) * (max - min + 1));
+	arr = malloc(sizeof(int) * (max - min + 1));
 
-	if (ar == NULL)
+	if (arr == NULL)
 		return (NULL);
 
 	for (i = min; i <= max; i++)
 	{
-		ar[j] = i;
-		j++
+		arr[j] = i;
+		j++;
 	}
 
-	return (ar);
+	return (arr);
 }
