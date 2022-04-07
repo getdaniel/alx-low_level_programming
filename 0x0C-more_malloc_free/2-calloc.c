@@ -4,7 +4,7 @@
 /**
  * *_calloc - allocates memory for an array using malloc
  *
- * @nmemb - an array of integer
+ * @nmemb: - an array of integer
  * @size: number of bytes
  *
  * Return: NULL if nmemb or size is 0 or malloc fails
@@ -19,7 +19,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	mem = malloc(sizeof * nmemb);
+	mem = malloc(sizeof(*nmemb));
 
 	if (mem == NULL)
 		return (NULL);
