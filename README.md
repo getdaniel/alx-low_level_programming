@@ -15,3 +15,5 @@
 0x0C-more_malloc_free <br>
 0x0D-preprocessor <br>
 0x0E-structures_typedef <br>
+0x0F-function_pointers <br>
+0x10-variadic_functions <br>
