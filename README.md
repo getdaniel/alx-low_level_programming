@@ -17,3 +17,4 @@
 0x0E-structures_typedef <br>
 0x0F-function_pointers <br>
 0x10-variadic_functions <br>
+0x12-singly_linked_lists <br>
