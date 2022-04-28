@@ -6,6 +6,7 @@
  * @b: String of binary number.
  *
  * Return: The converted number.
+ */
 unsigned int binary_to_uint(const char *b)
 {
        int index;
