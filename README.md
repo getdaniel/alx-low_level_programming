@@ -19,3 +19,4 @@
 0x10-variadic_functions <br>
 0x12-singly_linked_lists <br>
 0x13-more_singly_linked_lists <br>
+0x14-bit_manipulation <br>
