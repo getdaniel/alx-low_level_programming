@@ -9,17 +9,17 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-       int index;
-       unsigned int deci_val = 0;
+	int index;
+	unsigned int deci_val = 0;
 
-       if (!b)
-           return (0);
-       for (index = 0; index[b]; index++)
-       {
-             if (b[index] < '0' || b[index] > '1')
-                   return (0);
-             deci_val = 2 * deci_val + (b[index] - '0');
-       }
-       
-       return (deci_val);
+	if (!b)
+		return (0);
+	for (index = 0; index[b]; index++)
+	{
+		if (b[index] < '0' || b[index] > '1')
+			return (0);
+		deci_val = 2 * deci_val + (b[index] - '0');
+	}
+
+	return (deci_val);
 }
