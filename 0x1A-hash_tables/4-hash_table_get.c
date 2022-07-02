@@ -7,7 +7,7 @@
  * @key: The key you are looking for.
  *
  * Return: The value associated with the element, or
- * 	   NULL if key couldn't be found.
+ *         NULL if key couldn't be found.
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
@@ -25,5 +25,5 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	while (node && strcmp(node->key, key) != 0)
 		node = node->next;
 
-	return ((node == NULL)? NULL : node->value);
+	return ((node == NULL) ? NULL : node->value);
 }
