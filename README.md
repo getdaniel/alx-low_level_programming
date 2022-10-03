@@ -26,3 +26,4 @@
 0x17-doubly_linked_lists <br>
 0x18-dynamic_libraries <br>
 0x1C-makefiles <br>
+0x1E-search_algorithms <br>
